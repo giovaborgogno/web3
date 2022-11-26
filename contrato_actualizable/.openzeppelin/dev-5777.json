@@ -1,0 +1,90 @@
+{
+  "contracts": {
+    "MyContract": {
+      "address": "0x4F156675a3CA01A2b7C4ce85D15887f593008a14",
+      "constructorCode": "608060405234801561001057600080fd5b50610236806100206000396000f3fe",
+      "bodyBytecodeHash": "4ed70a496d009987a096f06a0fd87625f38e1706155e5b689e0ddf3f5ebb7d4d",
+      "localBytecodeHash": "b121e486760450438458929d24faad80f0164157ff770a6b93511de6e37124a6",
+      "deployedBytecodeHash": "b121e486760450438458929d24faad80f0164157ff770a6b93511de6e37124a6",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin\\upgrades\\contracts\\Initializable.sol",
+          "label": "initialized",
+          "astId": 3,
+          "type": "t_bool",
+          "src": "757:24:0"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin\\upgrades\\contracts\\Initializable.sol",
+          "label": "initializing",
+          "astId": 5,
+          "type": "t_bool",
+          "src": "876:25:0"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin\\upgrades\\contracts\\Initializable.sol",
+          "label": "______gap",
+          "astId": 67,
+          "type": "t_array:50<t_uint256>",
+          "src": "1982:29:0"
+        },
+        {
+          "contract": "MyContract",
+          "path": "contracts\\MyContract.sol",
+          "label": "x",
+          "astId": 75,
+          "type": "t_uint256",
+          "src": "171:16:1"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "contrato_actualizable/MyContract": [
+      {
+        "address": "0xF784C6657ee3f1C4b801E85f1Fce720F290376A7",
+        "version": "1.0.0",
+        "implementation": "0x4F156675a3CA01A2b7C4ce85D15887f593008a14",
+        "admin": "0x02c16B4cabbC86270884991C93043e2Ca372e868",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0x02c16B4cabbC86270884991C93043e2Ca372e868"
+  }
+}
